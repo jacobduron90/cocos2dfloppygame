@@ -18,7 +18,7 @@ public:
 	static CCloud* createCloudWithFileName(const char *fileName);
 	void Start();
     void Stop();
-    void SetSpeedAndWidth(const float speed, const float width);
+    void SetSpeedAndWidth(const float speed, const float width, const float xOffSet);
     
 	
 private:
@@ -28,6 +28,7 @@ private:
     float _speed;
     float _screenWidth;
     float _pixelsPerSec;
+    float _xOffset;
     
 	
 };

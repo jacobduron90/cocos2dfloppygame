@@ -59,3 +59,17 @@ void CRobin::SetState(int st) {
 void CRobin::SetStartSpeed() {
 	_speedY = StartSpeedY;
 }
+CCRect CRobin::TubeCollisionBox(){
+    return CCRect(
+        this->boundingBox().origin.x+20,
+        this->boundingBox().origin.y + 5,
+        this->boundingBox().size.width - 35,
+        this->boundingBox().size.height - 25
+    
+    );
+}
+
+
+
+
+

@@ -21,6 +21,7 @@ public:
 	int GetState();
 	void SetState(int st);
 	void SetStartSpeed();
+    cocos2d::CCRect TubeCollisionBox();
 	
 private:
 	
